@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wallpaperaddedit"
+    tools:context=".TaskEditor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời Khóa Biểu"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:textSize="20dp"
+        android:hint="Nhập tên thời khóa biểu"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Từ:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn thời gian"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+            
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Đến:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn thời gian"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Màu:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:padding="6dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Sửa"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Trở Về"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa Thời Khóa Biểu"
+        android:textColor="@color/main"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+</LinearLayout>
